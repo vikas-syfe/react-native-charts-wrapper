@@ -29,10 +29,18 @@ import java.util.concurrent.TimeUnit;
 public class ChartDataSetConfigUtils {
 
     public static void commonConfig(Chart chart, DataSet dataSet, ReadableMap config) {
-        // Setting main color
-        if (BridgeUtils.validate(config, ReadableType.Number, "color")) {
+
+
+        // Setting main color and gradient if apply
+        if (BridgeUtils.validate(config, ReadableType.Array, "lineColors")) {
+            int[] colors = BridgeUtils.convertToIntArray(config.getArray("lineColors"));
+            if (colors.length > 2) {
+                dataSet.setGradientColor(colors[0], colors[1]);
+            }
+        } else if (BridgeUtils.validate(config, ReadableType.Number, "color")) {
             dataSet.setColor(config.getInt("color"));
         }
+
         if (BridgeUtils.validate(config, ReadableType.Array, "colors")) {
             dataSet.setColors(BridgeUtils.convertToIntArray(config.getArray("colors")));
         }
