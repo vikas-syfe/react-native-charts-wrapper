@@ -34,7 +34,7 @@ public class ChartDataSetConfigUtils {
         // Setting main color and gradient if apply
         if (BridgeUtils.validate(config, ReadableType.Array, "lineColors")) {
             int[] colors = BridgeUtils.convertToIntArray(config.getArray("lineColors"));
-            if (colors.length > 2) {
+            if (colors.length >= 2) {
                 dataSet.setGradientColor(colors[0], colors[1]);
             }
         } else if (BridgeUtils.validate(config, ReadableType.Number, "color")) {
