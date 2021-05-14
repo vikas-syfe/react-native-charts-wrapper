@@ -14,7 +14,14 @@ import SwiftyJSON
 class ChartDataSetConfigUtils: NSObject {
     static func commonConfig(_ dataSet: ChartDataSet, config: JSON) {
         // Setting main color
-        if config["color"].int != nil {
+        if config["lineColors"].array != nil {
+            let colors = BridgeUtils.parseColors(config["lineColors"].arrayValue);
+            if (colors.count >= 2) {
+                dataSet.isDrawLineWithGradientEnabled = true
+                dataSet.setColors(colors[0], colors[1]);
+            }
+        }
+        else if config["color"].int != nil {
             dataSet.setColor(RCTConvert.uiColor(config["color"].intValue))
         }
 
