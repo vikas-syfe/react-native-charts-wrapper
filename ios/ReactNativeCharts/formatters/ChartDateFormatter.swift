@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ChartsFill
+import ChartsGradient
 
 open class ChartDateFormatter: NSObject, IValueFormatter, IAxisValueFormatter {
 

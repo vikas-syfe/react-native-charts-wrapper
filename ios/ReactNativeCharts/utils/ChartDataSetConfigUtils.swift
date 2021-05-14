@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ChartsFill
+import ChartsGradient
 import SwiftyJSON
 
 

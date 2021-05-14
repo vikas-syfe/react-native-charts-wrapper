@@ -4,7 +4,7 @@
 
 import Foundation
 import SwiftyJSON
-import ChartsFill
+import ChartsGradient
 
 class CandleDataExtract : DataExtract {
     override func createData() -> ChartData {

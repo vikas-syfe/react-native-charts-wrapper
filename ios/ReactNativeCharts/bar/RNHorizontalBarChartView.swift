@@ -2,7 +2,7 @@
 //  Copyright wuxudong
 //
 
-import ChartsFill
+import ChartsGradient
 import SwiftyJSON
 
 class RNHorizontalBarChartView: RNBarChartViewBase {

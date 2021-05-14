@@ -7,7 +7,7 @@
 
 import Foundation
 
-import ChartsFill
+import ChartsGradient
 
 class ChartHolder {
     open weak var chart:BarLineChartViewBase?

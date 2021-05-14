@@ -14,7 +14,7 @@
 
 import Foundation;
 
-import ChartsFill;
+import ChartsGradient;
 
 import SwiftyJSON;
 

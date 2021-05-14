@@ -8,7 +8,7 @@
 
 import Foundation
 
-import ChartsFill
+import ChartsGradient
 
 open class IndexValueFormatter: NSObject, IValueFormatter {
   
