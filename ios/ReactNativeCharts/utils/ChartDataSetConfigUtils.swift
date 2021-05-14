@@ -17,7 +17,9 @@ class ChartDataSetConfigUtils: NSObject {
         if config["lineColors"].array != nil {
             let colors = BridgeUtils.parseColors(config["lineColors"].arrayValue);
             if (colors.count >= 2) {
-                dataSet.isDrawLineWithGradientEnabled = true
+                let a = dataSet as! LineChartDataSet
+                a.isDrawLineWithGradientEnabled = true
+                a.gradientPositions = [0, 100]
                 dataSet.setColors(colors[0], colors[1]);
             }
         }
