@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ChartsGradient
+import ChartsGradient2
 import SwiftyJSON
 
 class EntryToDictionaryUtils: NSObject {

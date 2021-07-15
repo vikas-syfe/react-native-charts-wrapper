@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ChartsGradient
+import ChartsGradient2
 import SwiftyJSON
 
 // In react native, because object-c is unaware of swift protocol extension. use baseClass as workaround
@@ -416,7 +416,7 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
             } else {
               let customFormatter = NumberFormatter()
               customFormatter.positiveFormat = valueFormatter.stringValue
-              customFormatter.negativeFormat = valueFormatter.stringValue
+              customFormatter.negativeFormat = "-\(valueFormatter.stringValue)"
               
               axis.valueFormatter = DefaultAxisValueFormatter(formatter: customFormatter);
           }

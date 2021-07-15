@@ -5,7 +5,7 @@
 import Foundation
 
 import SwiftyJSON
-import ChartsGradient
+import ChartsGradient2
 
 class CombinedDataExtract : DataExtract {
     let lineDataExtract = LineDataExtract()

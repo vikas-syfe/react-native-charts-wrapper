@@ -5,7 +5,7 @@
 import Foundation
 
 import SwiftyJSON
-import ChartsGradient
+import ChartsGradient2
 
 class BarDataExtract : DataExtract {
     override open func createData() -> ChartData {
@@ -18,6 +18,10 @@ class BarDataExtract : DataExtract {
       
         if config["barWidth"].double != nil {
             barData.barWidth = config["barWidth"].doubleValue
+        }
+
+        if config["isBarRounded"].bool != nil {
+            barData.isBarRounded = config["isBarRounded"].boolValue
         }
         
         if config["group"].exists() {

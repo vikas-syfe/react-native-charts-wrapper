@@ -5,7 +5,7 @@
 import Foundation
 
 import SwiftyJSON
-import ChartsGradient
+import ChartsGradient2
 
 class LineDataExtract : DataExtract {
     override func createData() -> ChartData {
