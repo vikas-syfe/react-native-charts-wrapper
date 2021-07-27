@@ -20,8 +20,8 @@ class BarDataExtract : DataExtract {
             barData.barWidth = config["barWidth"].doubleValue
         }
 
-        if config["isBarRounded"].bool != nil {
-            barData.isBarRounded = config["isBarRounded"].boolValue
+        if config["barCornerRadius"].float != nil {
+            barData.barCornerRadius = config["barCornerRadius"].floatValue
         }
         
         if config["group"].exists() {
