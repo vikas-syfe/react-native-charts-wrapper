@@ -378,6 +378,11 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
                     if (BridgeUtils.validate(limitLineMap, ReadableType.Number, "valueTextColor")) {
                         limitLine.setTextColor(limitLineMap.getInt("valueTextColor"));
                     }
+
+                    if (BridgeUtils.validate(limitLineMap, ReadableType.Number, "valueTextBackgroundColor")) {
+                        limitLine.setLabelBgColor(limitLineMap.getInt("valueTextBackgroundColor"));
+                    }
+
                     if (BridgeUtils.validate(limitLineMap, ReadableType.Number, "valueFont")) {
                         limitLine.setTextSize(limitLineMap.getInt("valueFont"));
                     }
