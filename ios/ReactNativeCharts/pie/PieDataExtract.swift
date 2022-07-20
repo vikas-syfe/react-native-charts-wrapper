@@ -5,7 +5,7 @@
 import Foundation
 
 import SwiftyJSON
-import ChartsGradient2
+import ChartsGradient3
 
 class PieDataExtract : DataExtract {
     override func createData() -> ChartData {

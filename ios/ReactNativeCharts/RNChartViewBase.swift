@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ChartsGradient2
+import ChartsGradient3
 import SwiftyJSON
 
 // In react native, because object-c is unaware of swift protocol extension. use baseClass as workaround
@@ -341,6 +341,10 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
                   
                     if (limitLineConfig["valueTextColor"].int != nil) {
                         limitLine.valueTextColor = RCTConvert.uiColor(limitLineConfig["valueTextColor"].intValue)
+                    }
+
+                    if (limitLineConfig["valueTextBackgroundColor"].int != nil) {
+                        limitLine.valueTextBackgroundColor = RCTConvert.uiColor(limitLineConfig["valueTextBackgroundColor"].intValue)
                     }
                   
                     if (limitLineConfig["valueFont"].int != nil) {

@@ -2,7 +2,7 @@
 //  Copyright wuxudong
 //
 
-import ChartsGradient2
+import ChartsGradient3
 import SwiftyJSON
 
 class RNCombinedChartView: RNBarLineChartViewBase {

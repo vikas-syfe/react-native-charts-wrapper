@@ -4,7 +4,7 @@
 //  Copyright © 2016 dcg. All rights reserved.
 //
 import Foundation
-import ChartsGradient2
+import ChartsGradient3
 
 open class LargeValueFormatter: NSObject, IValueFormatter, IAxisValueFormatter
 {

@@ -9,7 +9,7 @@
 import Foundation
 
 import SwiftyJSON
-import ChartsGradient2
+import ChartsGradient3
 
 class ScatterDataExtract : DataExtract {
     override func createData() -> ChartData {
